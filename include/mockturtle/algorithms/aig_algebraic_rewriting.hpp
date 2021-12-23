@@ -55,7 +55,8 @@ private:
     if ( try_distributivity( n ) )
       return true;
     /* TODO: add more rules here... */
-
+    if (try_three_level_distributivity(n))
+        return true;
     return false;
   }
 
@@ -297,6 +298,9 @@ private:
       }
       return false;
   }
+
+
+
 
 private:
   Ntk& ntk;
