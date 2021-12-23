@@ -59,7 +59,6 @@ private:
     return false;
   }
 
-  
   /* Try the associativity rule on node n. Return true if the network is updated. */
   bool try_associativity(node n)
   {
